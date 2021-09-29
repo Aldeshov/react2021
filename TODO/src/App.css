@@ -1,0 +1,149 @@
+.App-header {
+  font-family: Calibri;
+  background-color: rgb(34,34,34);
+  margin: 5px 10%;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.App-name {
+  float: left;
+  position: relative;
+  color: rgb(130,139,143);
+  left: 5%;
+  top: -5px;
+}
+
+.App-body {
+  font-family: Calibri;
+  color: rgb(53,51,51);
+  margin: 5% 20% 0px 20%;
+}
+
+.App-input {
+  margin: 10px 10% 0 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-input input {
+  border: 1.3px solid rgb(212,212,212);
+  width: 60%;
+  font-family: Calibri;
+  border-radius: 5px;
+  padding: 0px 5px;
+  height: 28px;
+}
+
+.App-input button {
+  margin-left: 1%;
+  color: rgb(244, 246, 247);
+  background-color: rgb(51,122,183);
+  border: 1px solid rgb(48,114,172);
+  border-radius: 5px;
+  padding: 0px 10px;
+  height: 30px;
+}
+
+.App-input button:hover {
+  cursor: pointer;
+  background-color: rgb(39, 106, 165);
+}
+
+.App-body UL LI {
+  list-style-type: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*    ---------- Custom Checkbox (c) ---------     */
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 20%;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid rgb(215,221,234);
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: rgb(231, 231, 231);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 5.76px;
+  top: 3.2px;
+  width: 3.2px;
+  height: 6.4px;
+  border: solid white;
+  border-width: 0 1.92px 1.92px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+/*    ----------- END ------------     */
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: #e2e2e2 solid 1px;
+  padding: 25px 25px;
+  border-radius: 4px;
+  margin: 1% 0;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+}
