@@ -24,7 +24,7 @@ export default function Profile(props) {
             <Card.Subtitle className="mb-2 text-muted">
                 Skills:
             </Card.Subtitle>
-            <ul class="card-subtitle mb-2 text-muted">
+            <ul className="card-subtitle mb-2 text-muted">
             {
                 skills.map((skill, index) => (
                     <li key={index}>

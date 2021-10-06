@@ -3,7 +3,7 @@ import Profile from './Profile/Profile.jsx';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
-import './App.css'
+import './App.css';
 
 export default class App extends React.Component {
   state = {
@@ -48,7 +48,7 @@ export default class App extends React.Component {
 
   randomProfile() {
     var index = Math.floor(Math.random() * (Math.floor(this.state.persons.length) - Math.ceil(0))) + Math.ceil(0);
-    console.log("Random integer: "+index)
+    console.log("Random integer: " + index);
     this.setState({
       profile : this.state.persons[index]
     })
