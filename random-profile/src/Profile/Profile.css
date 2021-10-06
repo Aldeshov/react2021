@@ -1,0 +1,13 @@
+img {
+    height: 300px;
+    width: auto;
+    display: block;
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+}
+.card, img {
+    margin: 0 auto;
+}
