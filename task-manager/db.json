@@ -1,0 +1,44 @@
+{
+  "tasks": [
+    {
+      "title": "Task #1",
+      "description": "This is first task on API db.json file!",
+      "time": "October 16 18:23",
+      "reminder": true,
+      "isDone": false,
+      "id": 1
+    },
+    {
+      "title": "New task to do #2",
+      "description": "New task\nDescription!!!\nAbout it",
+      "time": "Friday at 8 o'clock",
+      "reminder": false,
+      "isDone": true,
+      "id": 2
+    },
+    {
+      "title": "Task 3",
+      "description": "task 3\ndesc\nls -l\nsudo apt update\nsudo apt upgrade",
+      "time": "someday",
+      "reminder": false,
+      "isDone": false,
+      "id": 3
+    },
+    {
+      "title": "todo homework",
+      "description": "react js",
+      "time": "never",
+      "reminder": false,
+      "isDone": true,
+      "id": 4
+    },
+    {
+      "title": "ZX",
+      "description": "ASD",
+      "time": "02.05.2021",
+      "reminder": false,
+      "isDone": true,
+      "id": 5
+    }
+  ]
+}
