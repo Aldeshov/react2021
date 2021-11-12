@@ -1,13 +1,18 @@
 import React from 'react'
-// import RemoteManager from './components/RemoteManager';
+import { Navigate, BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import RemoteManager from './components/RemoteManager';
 import LocalManager from './components/LocalManager';
 
-class App extends React.Component {
-  render() {
-    return (
-      // <RemoteManager />
-      <LocalManager />
-    )
-  }
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path='/remote' element={<RemoteManager />} />
+        <Route path='/local' element={<LocalManager />} />
+        
+        <Route exact path="/*" element={<Navigate to="/local" />} />
+      </Routes>
+    </Router>
+  )
 }
 export default App;
